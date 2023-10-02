@@ -1,0 +1,39 @@
+.foto{
+  width: 880px;
+  height: 400px;
+  margin-top: 12px;
+
+}
+.titulo{
+  color: blue;
+  font-size: 34px;
+  text-decoration: underline;
+  margin: 18px 0 40px;
+
+}
+.container{
+  align-items: center;
+  display: flex;
+flex-direction: column;
+}
+.result{
+  color: brown;
+  font-size: 24px;
+  margin: 10px 0 10px;
+  text-decoration: underline;
+}
+.imc{
+  color: rgb(59, 6, 109);
+  font-size: 20px;
+  margin: 7px 0 ;
+  font-weight: bold;
+}
+.input{
+width: 300px;
+padding: 10px;
+text-align: center;
+font-size: 25px;
+border-radius: 30px;
+margin-bottom: 10px;
+
+}

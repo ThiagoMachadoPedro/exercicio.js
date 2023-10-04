@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import style from './Perfil.module.css'
 
 
+
 const Formulario = () =>{
 const [altura , setAltura] = useState();
 const [peso , setPeso] = useState();
@@ -54,8 +55,49 @@ useEffect(() => {
 
 {obsidade()}
 
+<h2 className={style.classificacao}>Tabela de Classificação de IMC</h2>
+    <table className={style.table}>
+        <tr>
+            <th className={style.th}>IMC</th>
+            <th className={style.th}>Classificação</th>
+        </tr>
+        <tr>
+            <td className={style.td}>Menor que 18.5</td>
+            <td className={style.td}>Abaixo do peso</td>
+        </tr>
+        <tr>
+            <td className={style.td}>18.5 - 24.9</td>
+            <td className={style.td}>Peso normal</td>
+        </tr>
+        <tr>
+            <td className={style.td}>25.0 - 29.9</td>
+            <td className={style.td}>Sobrepeso</td>
+        </tr>
+        <tr>
+            <td className={style.td}>30.0 - 34.9</td>
+            <td className={style.td}>Obesidade grau I</td>
+        </tr>
+        <tr>
+            <td className={style.td}>35.0 - 39.9</td>
+            <td>Obesidade grau II</td>
+        </tr>
+        <tr>
+            <td className={style.td}>Maior ou igual a 40.0</td>
+            <td className={style.td}>Obesidade grau III ou mórbida</td>
+        </tr>
+    </table>
 
-<img className={style.foto} src=".\src\components\img\tabela-imc.png" alt="tabela" />
+
+
+
+
+
+
+
+
+
+
+
 
 </div>
     </form>
